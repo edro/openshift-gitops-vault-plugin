@@ -103,9 +103,9 @@ Note: The below operator subscription is pinned specifically to ~v1.12.3~ from t
 
 #+NAME: Deploy openshift gitops operator
 #+BEGIN_SRC bash
-oc --namespace openshift-gitops-operator create -f 2-argocd/namespace-gitops.yaml
-oc --namespace openshift-gitops-operator create -f 2-argocd/operatorgroup-gitops.yaml
-oc --namespace openshift-gitops-operator create -f 2-argocd/subscription-gitops.yaml
+oc --namespace openshift-gitops create -f 2-argocd/namespace-gitops.yaml
+oc --namespace openshift-gitops create -f 2-argocd/operatorgroup-gitops.yaml
+oc --namespace openshift-gitops create -f 2-argocd/subscription-gitops.yaml
 #+END_SRC
 
 

@@ -13,7 +13,7 @@ vault write auth/kubernetes/config \
 vault secrets enable -version=2 kv
 
 # Create our sample kv
-vault kv put kv/vplugin/supersecret username="myuser" password="password"
+vault kv put kv/vplugin/supersecret username="myuser" password="mypassword" token="mytoken"
 
 # Create policy for secret access
 vault policy write vplugin - <<EOF

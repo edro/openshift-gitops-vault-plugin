@@ -2,7 +2,7 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: openshift-gitops-operator
+  name: openshift-gitops
   labels:
     kubernetes.io/metadata.name: openshift-gitops-operator
 spec:
